@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+numpy = "*"
+streamlit = "*"
+streamlit-chat = "*"
+langchain = "*"
+openai = "*"
+pinecone-client = "*"
+sentence-transformers = "*"
+unstructured = "*"
+python-dotenv = "*"
+milvus = "*"
+ipykernel = "*"
+pymilvus = "*"
+tiktoken = "*"
+huggingface-hub = "*"
+customtkinter = "*"
+pytube = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
