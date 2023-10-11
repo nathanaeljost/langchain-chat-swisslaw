@@ -10,7 +10,6 @@ import pinecone
 from langchain.vectorstores import Pinecone
 
 
-
 def load_docs(directory):
   loader = DirectoryLoader(directory)
   documents = loader.load()
@@ -35,10 +34,12 @@ def main():
 
   pinecone.init(
       api_key=os.getenv("PINECONE_API_TOKEN"),  
-      environment="gcp-starter" 
-  )
+      environment="gcp-starter")
+  
   index_name = "langchain-tryout"
   index = Pinecone.from_documents(docs, embeddings, index_name=index_name)
+
+
 
 if __name__ == "__main__":
   main()
